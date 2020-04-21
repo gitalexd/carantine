@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 70px;
+            height: 70px;
+            outline: 2px solid #000;
+            background: lime;
+        }
+    </style>
+</head>
+<body>
+<div id="green">green</div>
+<input id="width" placeholder="Ширина">
+<input id="height" placeholder="Высота">
+
+<button onclick="setSize()">OK</button>
+
+<script>
+    function setSize() {
+        let width = document.getElementById("width").value;
+        console.log(width);
+        let height = document.getElementById("height").value;
+        console.log(height);
+
+        const green = document.getElementById("green");
+
+        green.style.height = height;
+        green.style.width = width;
+
+    }
+
+</script>
+
+</body>
+</html>

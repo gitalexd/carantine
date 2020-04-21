@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="red" style="background: tan"></div>
+<button data-color="red" onclick="SetColor(this)">OK</button>
+<div id="yellow" style="background: hotpink"></div>
+<button data-color="yellow" onclick="SetColor(this)">OK</button>
+<div id="green" style="background: navajowhite"></div>
+<button data-color="green" onclick="SetColor(this)">OK</button>
+<script>
+    function SetColor(e) {
+        let color = e.dataset.color;
+        let block = document.getElementById(color);
+        block.style.background = color;
+
+    }
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+<img alt="Как Денис меня любит" id=1 src="fjf.jpg">
+<button onclick="show_hide(1)">OK</button>
+
+<img alt="В Бородино" id=2 src="fn.jpg">
+<button onclick="show_hide(2)">OK</button>
+
+<img alt="На карантине" id=3 src="ld.jpg">
+<button onclick="show_hide(3)">OK</button>
+
+<script>
+    function show_hide(id) {
+
+
+        var x = document.getElementById(id);
+
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

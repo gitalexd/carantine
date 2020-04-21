@@ -1,0 +1,23 @@
+<!--5.1	Цикл for	Выполнение действий в цикле от 1 до n-->
+<meta charset="utf-8">
+<div>
+    <!--    Создать массив от одного до 10 <br>-->
+    <!--    вывести этот массив на экран так чтобы каждый элемент был умножен на 2-->
+</div>
+
+<div id="list"></div>
+<script>
+    const a = [
+        "denis",
+        "sasha",
+        'missi'
+    ];
+    let list = document.getElementById('list');
+
+    // list.innerHTML = 'Привет';
+    // list.innerHTML = list.innerHTML + ' Missi!';
+
+    for (let i = 0; i < a.length; i++) {
+        list.innerHTML = list.innerHTML + a[i] + ' хороший <br>';
+    }
+</script>

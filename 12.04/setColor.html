@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        div {
+            width: 70px;
+            height: 70px;
+        }
+    </style>
+
+</head>
+
+<body>
+<div id="darkslateblue" style="background: darkolivegreen"></div>
+<button data-color="darkslateblue" onclick="SetColor(this)">OK</button>
+<div id="violet" style="background: orchid "></div>
+<button data-color="violet" onclick="SetColor(this)">OK</button>
+<div id="mediumpurple" style="background: salmon "></div>
+<button data-color="mediumpurple" onclick="SetColor(this)">OK</button>
+
+
+<button></button>
+<script>
+    function SetColor(e) {
+        let color = e.dataset.color;
+        let block = document.getElementById(color);
+        block.style.background = color;
+
+    }
+
+</script>
+
+</body>
+
+
+
+
+

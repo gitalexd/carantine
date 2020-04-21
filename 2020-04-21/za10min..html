@@ -1,0 +1,25 @@
+<div id="cola"></div>
+
+<script>
+    const a = [
+        1,
+        2,
+        3,
+        4
+    ];
+    let cola = document.getElementById('cola');
+
+    myFor();
+
+
+    async function myFor() {
+        for (let i = 0; i < 4; i++) {
+            cola.innerHTML = cola.innerHTML + i + ' - ' + a[i] * 2 + '<br>';
+            await sleep(2000);
+        }
+    }
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+</script>

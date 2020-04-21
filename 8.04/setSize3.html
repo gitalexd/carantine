@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 70px;
+            height: 70px;
+            background: purple;
+        }
+    </style>
+</head>
+<body>
+<div id="green">sqere</div>
+<input id="height" pleaceholder="Высота">
+<input id="width" pleaceholder="Ширина">
+<button onclick="setSize()">OK</button>
+<script>
+    function setSize() {
+        let width = document.getElementById("width").value;
+        let height = document.getElementById("height").value;
+        const green = document.getElementById("green");
+        green.style.width = width;
+        green.style.height = height;
+
+    }
+
+
+</script>
+</body>
+</html>

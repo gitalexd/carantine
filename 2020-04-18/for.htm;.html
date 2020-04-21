@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+
+<div id="list"></div>
+
+<script>
+    const a = [
+        2,
+        3,
+        4
+    ];
+    let list = document.getElementById('list');
+
+    for (i = 0; i < a.length; i++) {
+        list.innerHTML = list.innerHTML + i + ' - ' + a[i] * 2 + '<br>'
+    }
+
+
+</script>

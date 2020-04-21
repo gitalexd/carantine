@@ -1,0 +1,33 @@
+<html>
+<meta charset="UTF-8">
+<head>
+    <style>
+        img {
+            width: 250px;
+            height: 250px;
+        }
+
+    </style>
+</head>
+<body>
+<img alt="Любовь Дениса" id="1" src="fjf.jpg">
+<button onclick="img(1)">OK</button>
+<img alt="Бородино" id="2" src="fn.jpg">
+<button onclick="img(2)">OK</button>
+<img alt="Карантин" id="3" src="ld.jpg">
+<button onclick="img(3)">OK</button>
+<script>
+    function img(id) {
+        var x = document.getElementById(id)
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+
+
+</html>

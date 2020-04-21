@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 70px;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+<div id='blue' style="background: gold"></div>
+<button>OK</button>
+
+<div id='green' style="background: lightpink"></div>
+<button data-color="green" onclick="setColor(this)">OK</button>
+
+<div id=red style="background: cadetblue"></div>
+<button data-asd="red" onclick="setColor(this)">OK</button>
+<script>
+    function setColor(e) {
+        let color = e.dataset.asd;
+        let block = document.getElementById(color);
+        block.style.background = color;
+    }
+
+</script>
+
+
+</body>
+</html>

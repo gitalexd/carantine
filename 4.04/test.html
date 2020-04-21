@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<div class="who">Саша</div>
+<div class="who">Кеша</div>
+
+<script>
+    const whos = document.getElementsByClassName('who');
+    for (let i = 0; i <= whos.length - 1; i++) {
+        whos[i].addEventListener("click", check)
+    }
+
+    function check() {
+        let whoName = this.innerHTML;
+
+        if (whoName === 'Саша') {
+            console.log('love');
+        } else {
+            console.log('bitch');
+        }
+    }
+</script>
